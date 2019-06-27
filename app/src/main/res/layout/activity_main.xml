@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:id="@+id/top"
+    android:background="#FBE9E7"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access token"
+        android:id="@+id/login"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="secrete"
+        android:id="@+id/secrete"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>
+
+    <include
+        android:layout_below="@+id/top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rcycle"
+        layout="@layout/recycleview"/>
+
+</RelativeLayout>
